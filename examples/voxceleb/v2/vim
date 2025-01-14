@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -o resnet_4.out
+#SBATCH --gres=gpu:1
+#SBATCH -w ttnusa8
+###SBATCH -p new
+./run.sh
+
+
