@@ -37,9 +37,50 @@ For detailed insights, refer to the [paper](https://arxiv.org/abs/2501.05729).
 1. **Prepare data**:
    The GitHub repository [charsiu](https://github.com/lingjzhu/charsiu) was used to generate phoneme files. We utilized the Textless Alignment method to generate the phoneme files.
    
-2. **Dependencies**:
+   The pipeline for preparing speech samples in this repository is the same as that used in [WeSpeaker](https://github.com/wenet-e2e/wespeaker).
+   
+   Dataset for training usage:
+   VoxCeleb1、2 training set;
+   MUSAN dataset;
+   RIR dataset.
+   
+3. **Dependencies**:
    ```bash
    git clone https://github.com/mmmmayi/ExPO.git
    cd ExPO
    pip install -r requirements.txt
-3.
+   
+4. **Training**:
+   ```bash
+   cd examples/voxceleb/v2
+   ./run.sh
+   
+## 📚 Citation
+
+If you find this project useful in your research, please consider citing our paper:
+
+```bibtex
+ @misc{ma2025expoexplainablephonetictraitoriented,
+      title={ExPO: Explainable Phonetic Trait-Oriented Network for Speaker Verification}, 
+      author={Yi Ma and Shuai Wang and Tianchi Liu and Haizhou Li},
+      year={2025},
+      eprint={2501.05729},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2501.05729}, 
+ }
+```
+
+## 🙏 Acknowledgements
+
+This project builds upon and is inspired by the work of several open-source repositories. We extend our gratitude to the authors and contributors of the following projects:
+
+[charsiu](https://github.com/lingjzhu/charsiu)
+
+[WeSpeaker](https://github.com/wenet-e2e/wespeaker)
+
+[ECAPA-TDNN](https://github.com/TaoRuijie/ECAPA-TDNN)
+
+[voxceleb_trainer](https://github.com/clovaai/voxceleb_trainer)
+
+Thanks for these authors to open source their code!
